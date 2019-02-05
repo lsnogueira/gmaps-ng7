@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box !important;
+}
+
+.col-sm {
+    text-align: center;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px
+}
+
+form {
+    border: 1px solid rgb(212, 215, 218);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.textbox {
+    margin: 0 0 10px 0;
+}
+
+.submitButton {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.endForm {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;    
+}
+
+::placeholder{
+    color: lightgrey;
+}

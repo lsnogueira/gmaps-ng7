@@ -1,0 +1,38 @@
+<div class="container">
+  <div #gmap class="map"></div>
+  <div class="row">
+    <h2 #ppk></h2>
+    <div class="col-sm">
+      <button (click)="setMapType('terrain')" class="btn btn-primary">Terrain</button>
+    </div>
+    <div class="col-sm">
+      <button (click)="setMapType('satellite')" class="btn btn-danger">Satellite</button>
+    </div>
+    <div class="col-sm">
+      <button (click)="setMapType('roadmap')" class="btn btn-warning">Road Map</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <button (click)="setCenter($event)" class="btn btn-secondary">Mudar Local</button>
+    </div>
+    <div class="col-sm">
+      <button (click)="setMarker(myLatLng)" class="btn btn-primary">Add Marker</button>
+    </div>
+    <div class="col-sm">
+        <button (click)="marker.setMap(null)" class="btn btn-danger">Remove Marker</button>
+      </div>
+  </div>
+  <form>
+    <div class="form-group endForm">
+      <label for="formGroupExampleInput" class="textbox">Endereço</label>
+      <input type="text" class="form-control" id="endereco" placeholder="Ex: Rua Gustavo da Silveira, 901, SP" #end>
+      <div class="row justify-content-end">
+        <div class="col-4" class="submitButton">
+          <button type="button" class="btn btn-secondary" (click)="changeAddress(end.value)">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+  </form>
+</div>
