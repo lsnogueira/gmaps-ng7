@@ -1,18 +1,20 @@
 # GmapsNg7
 
-In this project we will use 2 google APIs (Maps JavaScript API and Geocoding API), access https://console.cloud.google.com/apis/library and activate that 2 APIs.
-	1.	Run npm install --save @types/googlemaps
-	2.	Put on index.html <script src="http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY”></script>
-	3.	Get this key in https://developers.google.com/maps/documentation/javascript/get-api-key
-	4.	In line 73 of app.component.ts put your API key after "?key="
-
+<p>In this project we will use 2 google APIs (Maps JavaScript API and Geocoding API), access https://console.cloud.google.com/apis/library and activate that 2 APIs.</p>
+	<ul>
+		<li>1.	Run <i>npm install --save @types/googlemaps</i></li>
+		<li>2.	Put on index.html <i>&lt;script src="http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY”&gt;&lt;/script&gt;</i></li>
+		<li>3.	Get this key in https://developers.google.com/maps/documentation/javascript/get-api-key</li>
+		<li>4.	In line 73 of app.component.ts put your API key after "?key="</li>
+	</ul>
 ## pt-br
-Neste projeto iremos usar 2 APIs do google (Maps JavaScript API e Geocoding API), acesse https://console.cloud.google.com/apis/library e ative as duas APIs.
-	1.	Rode o comando npm install --save @types/googlemaps
-	2.	Em index.html insira <script src="http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY”></script>
-	3.	Obtenha a chave em https://developers.google.com/maps/documentation/javascript/get-api-key
-	4.	Na linha 73 do arquivo app.component.ts coloque a mesma chave após "?key="
-
+<p>Neste projeto iremos usar 2 APIs do google (Maps JavaScript API e Geocoding API), acesse https://console.cloud.google.com/apis/library e ative as duas APIs.</p>
+	<ul>
+		<li>1.	Rode o comando <i>npm install --save @types/googlemaps</i></li>
+		<li>2.	Em index.html insira <i>&lt;script src="http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY”&gt;&lt;	/script&gt;</li>
+		<li>3.	Obtenha a chave em https://developers.google.com/maps/documentation/javascript/get-api-key</li>
+		<li>4.	Na linha 73 do arquivo app.component.ts coloque a mesma chave após "?key="</li>
+	</ul>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
 ## Development server
