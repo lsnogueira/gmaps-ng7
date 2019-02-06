@@ -70,18 +70,17 @@ export class AppComponent {
 
   changeAddress(address: string) {
     address = address.replace(/\s|&/g, '+')
-    let fullAddress = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=AIzaSyByxl6OGVQr9mWy_cEi2y5Z2er2ztokLXM'
+    let fullAddress = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=YOUR_API_KEY'
 
-    //utilizando subscribe para ver o json retornado
+    
     this.mapService.getGeolocation(fullAddress).subscribe(result => {
-      
-      console.log(Object.keys(result.results).length) //apagar depois
+            
       if (Object.keys(result.results).length !== 0) {        
         this.lat = result.results[0].geometry.location.lat
         this.lng = result.results[0].geometry.location.lng
         this.myLatLng = { lat: this.lat, lng: this.lng }
 
-        let contentString: string = '<p>Local da Cerimônia de Casamento: </p><p><b>' +
+        let contentString: string = '<p>Local: </p><p><b>' +
           result.results[0].formatted_address + '</b></p>' +
           '<p><a href=\"https://www.google.com/maps?q=' + this.lat + ',' + this.lng + '\">Veja no Maps</a>'
 
