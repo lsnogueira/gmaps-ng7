@@ -7,7 +7,9 @@
 		<li>3.	Get this key in https://developers.google.com/maps/documentation/javascript/get-api-key</li>
 		<li>4.	In line 73 of app.component.ts put your API key after "?key="</li>
 	</ul>
-## pt-br
+
+## pt-br	
+
 <p>Neste projeto iremos usar 2 APIs do google (Maps JavaScript API e Geocoding API), acesse https://console.cloud.google.com/apis/library e ative as duas APIs.</p>
 	<ul>
 		<li>1.	Rode o comando <i>npm install --save @types/googlemaps</i></li>
