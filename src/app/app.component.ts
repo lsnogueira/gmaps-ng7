@@ -57,7 +57,7 @@ export class AppComponent {
       animation: google.maps.Animation.BOUNCE,
       position: myLatLng,
       icon: '../assets/heart.png',
-      title: 'Cerimônia de Casamento'
+      title: 'Location here!'
     });
 
   }
